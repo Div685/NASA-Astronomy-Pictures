@@ -1,8 +1,9 @@
 # NASA APOD (Astronomy Picture of the Day)
+### Catalogue of Astronomy. (AstroSplash)
 
 > 
 
-### You can access a Live Demo [HERE](https://bookstore-redux-v1.herokuapp.com/)
+### You can access a Live Demo [HERE](https://astrosplash.herokuapp.com/)
 
 ![Screenshot](./screencapture.png)
 
