@@ -3,7 +3,7 @@ import { FETCH_PHOTOS_FAILURE, FETCH_PHOTOS_LOADING, FETCH_PHOTOS_SUCCESS } from
 const photoInitialState = {
   photos: [],
   requesting: false,
-  error: '',
+  error: null,
 };
 
 const photos = (state = photoInitialState, action) => {
@@ -16,8 +16,8 @@ const photos = (state = photoInitialState, action) => {
     case FETCH_PHOTOS_FAILURE:
       return {
         ...state,
-        requesting: false,
         error: action.error,
+        requesting: false,
       };
     case FETCH_PHOTOS_SUCCESS:
       return {

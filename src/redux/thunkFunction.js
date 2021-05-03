@@ -6,14 +6,14 @@ import {
   singlePhotoFailur,
   singlePhotoLoading,
   singlePhotoSuccess,
-} from './actions';
+} from './actions/index';
 import store from './store';
 
 export const photosRequest = () => {
   store.dispatch(fetchPhotosLoading());
   const requestPhotos = getPhotos();
   requestPhotos.then((data) => {
-    store.dispatch(fetchPhotosSuccess(data.results));
+    store.dispatch(fetchPhotosSuccess(data));
   }).catch((error) => {
     store.dispatch(fetchPhotosFailure(error));
   });
