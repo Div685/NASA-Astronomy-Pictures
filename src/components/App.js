@@ -1,10 +1,10 @@
 import React from 'react';
-import PhotoAPODList from '../container/PhotoAPODList';
+import Routes from './Routes';
 
 function App() {
   return (
     <div>
-      <PhotoAPODList />
+      <Routes />
     </div>
   );
 }
