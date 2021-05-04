@@ -28,9 +28,10 @@ const mapStateToProps = (state) => ({ photosList: mapPhotoInfo(state.photos) });
 
 PhotoAPODList.propTypes = {
   photosList: PropTypes.arrayOf(PropTypes.shape({
-    date: PropTypes.number.isRequired,
+    date: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
+    media_type: PropTypes.string.isRequired,
   })).isRequired,
 };
 
