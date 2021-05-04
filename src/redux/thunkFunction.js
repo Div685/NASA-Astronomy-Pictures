@@ -1,8 +1,15 @@
-import { getPhotos, getSinglePhoto } from '../api/requests';
+/* eslint-disable no-unused-vars */
+import { getDateFilteredPhoto, getPhotos, getSinglePhoto } from '../api/requests';
 import {
   fetchPhotosFailure,
   fetchPhotosLoading,
   fetchPhotosSuccess,
+
+  filterPhotoFailur,
+  filterPhotoLoading,
+
+  filterPhotoSuccess,
+
   singlePhotoFailur,
   singlePhotoLoading,
   singlePhotoSuccess,
@@ -27,4 +34,23 @@ export const singlePhotoRequest = (date) => {
   }).catch((error) => {
     store.dispatch(singlePhotoFailur(error));
   });
+};
+
+export const filterPhotoRequest = async (date) => {
+  console.log('asdf', date);
+  store.dispatch(filterPhotoLoading());
+  try {
+    const data = await getDateFilteredPhoto(date);
+    store.dispatch(filterPhotoSuccess(data));
+    console.log('filter: ', data);
+  } catch (e) {
+    store.dispatch(filterPhotoFailur(e));
+  }
+  // // const requestFilterPhoto = getDateFilteredPhoto(date);
+  // requestFilterPhoto.then((data) => {
+  //   dispatch(filterPhotoSuccess(data));
+  //   console.log('filter: ', data);
+  // }).catch((error) => {
+  //   dispatch(filterPhotoFailur(error));
+  // });
 };

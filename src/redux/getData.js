@@ -1,4 +1,4 @@
-const mappingPhotos = (photos) => (
+export const mappingPhotos = (photos) => (
   {
     title: photos.title,
     date: photos.date,
@@ -7,10 +7,17 @@ const mappingPhotos = (photos) => (
     media_type: photos.media_type,
   });
 
-const mapPhotoInfo = (state) => {
+export const mapPhotoInfo = (state) => {
   const { photos } = state;
   const photosAttributes = photos.map((photo) => mappingPhotos(photo));
   return photosAttributes;
 };
 
-export default mapPhotoInfo;
+export const filterPhotosByDate = (photos, date) => {
+  const res = photos.filter((item) => item.date === date);
+  console.log(res);
+  return res;
+};
+
+// export default mapPhotoInfo;
+// export default filterPhotosByDate;
