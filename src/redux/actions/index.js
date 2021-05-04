@@ -5,7 +5,8 @@ import {
   SINGLE_PHOTO_LOADING,
   SINGLE_PHOTO_SUCCESS,
   SINGLE_PHOTO_FAILUR,
-  CHANGE_FILTER,
+  FILTER_START_DATE,
+  FILTER_END_DATE,
 
 } from './actionType';
 
@@ -37,9 +38,14 @@ const singlePhotoFailur = (error) => ({
   error,
 });
 
-const filterPhotoAction = (filter) => ({
-  type: CHANGE_FILTER,
-  filter,
+const filterStartDate = (startDate) => ({
+  type: FILTER_START_DATE,
+  startDate,
+});
+
+const filterEndDate = (endDate) => ({
+  type: FILTER_END_DATE,
+  endDate,
 });
 
 export {
@@ -49,5 +55,6 @@ export {
   singlePhotoLoading,
   singlePhotoSuccess,
   singlePhotoFailur,
-  filterPhotoAction,
+  filterStartDate,
+  filterEndDate,
 };
