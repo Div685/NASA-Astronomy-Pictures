@@ -4,6 +4,7 @@ const mappingPhotos = (photos) => (
     date: photos.date,
     url: photos.url,
     explanation: photos.explanation,
+    media_type: photos.media_type,
   });
 
 const mapPhotoInfo = (state) => {

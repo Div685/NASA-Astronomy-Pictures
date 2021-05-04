@@ -23,7 +23,7 @@ export const singlePhotoRequest = (date) => {
   store.dispatch(singlePhotoLoading());
   const requestSinglePhoto = getSinglePhoto(date);
   requestSinglePhoto.then((data) => {
-    store.dispatch(singlePhotoSuccess(data.results));
+    store.dispatch(singlePhotoSuccess(data));
   }).catch((error) => {
     store.dispatch(singlePhotoFailur(error));
   });
