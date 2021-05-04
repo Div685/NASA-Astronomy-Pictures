@@ -5,6 +5,7 @@ import {
   SINGLE_PHOTO_LOADING,
   SINGLE_PHOTO_SUCCESS,
   SINGLE_PHOTO_FAILUR,
+  CHANGE_FILTER,
 
 } from './actionType';
 
@@ -36,6 +37,11 @@ const singlePhotoFailur = (error) => ({
   error,
 });
 
+const filterPhotoAction = (filter) => ({
+  type: CHANGE_FILTER,
+  filter,
+});
+
 export {
   fetchPhotosLoading,
   fetchPhotosSuccess,
@@ -43,4 +49,5 @@ export {
   singlePhotoLoading,
   singlePhotoSuccess,
   singlePhotoFailur,
+  filterPhotoAction,
 };
