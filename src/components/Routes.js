@@ -8,7 +8,7 @@ import PhotoAPODList from '../container/PhotoAPODList';
 import PhotoDetails from '../container/PhotoDetails';
 
 const Routes = () => (
-  <div>
+  <div className="main-routes">
     <Router>
       <Switch>
         <Route exact path="/">

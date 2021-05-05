@@ -5,6 +5,8 @@ import PhotoAPOD from '../components/PhotoAPOD';
 import { filterPhotoRequest, photosRequest } from '../redux/thunkFunction';
 import { mapPhotoInfo } from '../redux/getData';
 import PhotosFilter from '../components/PhotosFilter';
+import '../assets/css/PhotoAPOD.css';
+import Banner from '../components/Banner';
 
 function PhotoAPODList({ filter, photosList }) {
   const [photoList, setPhotoList] = useState([]);
@@ -16,19 +18,42 @@ function PhotoAPODList({ filter, photosList }) {
     await filterPhotoRequest(date);
   };
 
+  const heatMap = () => (
+    <>
+      <div className="photo__details-heatmap">
+        <div className="image" />
+        <div className="figcaption" />
+      </div>
+
+      <div className="photo__details-heatmap">
+        <div className="image" />
+        <div className="figcaption" />
+      </div>
+
+      <div className="photo__details-heatmap">
+        <div className="image" />
+        <div className="figcaption" />
+      </div>
+    </>
+
+  );
+
   return (
-    <div>
-      <PhotosFilter handleFilterChange={handleFilterChange} />
-      <div>
-        {
+    <>
+      <Banner />
+      <div className="main-section">
+        <PhotosFilter handleFilterChange={handleFilterChange} />
+        <div className="photo-list row">
+          {
             photoList && photoList.length
               ? photoList.map((photo) => (
                 <PhotoAPOD key={photo} photo={photo} />
               ))
-              : (<h1> No data found! </h1>)
+              : (heatMap())
           }
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

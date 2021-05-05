@@ -12,10 +12,23 @@ const PhotoDetails = ({ photo }) => {
     singlePhotoRequest(date);
   }, []);
 
+  const heatMap = () => (
+    <>
+      <div className="photo__heatmap row">
+        <div className=" col-5 p-3">
+          <div className="heatmap__left" />
+          <div className="heatmap__date" />
+        </div>
+        <div className="heatmap__image col-6" />
+      </div>
+    </>
+
+  );
+
   return (
-    <div>
+    <div className="photo__detail">
       {
-        photo ? <PhotoDesc photo={photo} /> : <h1>No Data Found!</h1>
+        photo ? <PhotoDesc photo={photo} /> : (heatMap())
       }
     </div>
   );
@@ -29,11 +42,11 @@ PhotoDetails.propTypes = {
     date: PropTypes.string.isRequired,
     explanation: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
 };
 
-// PhotoDetails.defaultProps = {
-//   photo: null,
-// };
+PhotoDetails.defaultProps = {
+  photo: null,
+};
 
 export default connect(mapStateToProps)(PhotoDetails);
