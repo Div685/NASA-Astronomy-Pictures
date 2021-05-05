@@ -1,6 +1,6 @@
 .photo__detail {
   height: 85vh;
-    margin: 22px 0px
+  margin: 22px 0;
 }
 
 .right__side {
@@ -14,7 +14,7 @@
 
 .photo__heatmap {
   height: 85vh;
-    margin: 42px 0px;
+  margin: 42px 0;
 }
 
 .heatmap__left {

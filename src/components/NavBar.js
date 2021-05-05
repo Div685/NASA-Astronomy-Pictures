@@ -13,13 +13,15 @@ function NavBar() {
       }
     });
     return () => {
-      window.removeEventListener('scroll');
+      window.removeEventListener('scroll', null);
     };
   }, []);
 
   return (
     <div className={`nav ${show && 'nav__black'}`}>
-      <h3 className="nav__logo">AstroSplash</h3>
+      <a href="/" className="nav__logo">
+        <h3 className="nav__logo">AstroSplash</h3>
+      </a>
 
       <span className="nav__link">NASA APOD API</span>
     </div>
