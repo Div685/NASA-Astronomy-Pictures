@@ -1,0 +1,45 @@
+import { FILTER_PHOTO_FAILUR, FILTER_PHOTO_LOADING, FILTER_PHOTO_SUCCESS } from '../actions/actionType';
+
+const filtersReducerDefaultState = {
+  // startDate: undefined,
+  // endDate: undefined,
+  photo: {},
+  error: null,
+  loading: false,
+};
+
+const filterPhotoReducer = (state = filtersReducerDefaultState, action) => {
+  switch (action.type) {
+    case FILTER_PHOTO_LOADING:
+      return {
+        ...state,
+        loading: true,
+      };
+    case FILTER_PHOTO_SUCCESS:
+      return {
+        ...state,
+        photo: action.filter,
+        loading: false,
+      };
+    case FILTER_PHOTO_FAILUR:
+      return {
+        ...state,
+        error: action.error,
+        loading: false,
+      };
+    // case FILTER_START_DATE:
+    //   return {
+    //     ...state,
+    //     startDate: action.startDate,
+    //   };
+    // case FILTER_END_DATE:
+    //   return {
+    //     ...state,
+    //     endDate: action.endDate,
+    //   };
+    default:
+      return state;
+  }
+};
+
+export default filterPhotoReducer;

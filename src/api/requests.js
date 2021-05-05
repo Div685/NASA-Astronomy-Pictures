@@ -18,3 +18,10 @@ export const getSinglePhoto = async (date) => {
   }
   throw Error(404);
 };
+
+export const getDateFilteredPhoto = async (date) => {
+  const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}`;
+  const request = await fetch(url, { mode: 'cors' });
+  const data = await request.json();
+  return data;
+};

@@ -1,20 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import PhotoAPOD from '../components/PhotoAPOD';
-import { photosRequest } from '../redux/thunkFunction';
-import mapPhotoInfo from '../redux/getData';
+import { filterPhotoRequest, photosRequest } from '../redux/thunkFunction';
+import { mapPhotoInfo } from '../redux/getData';
+import PhotosFilter from '../components/PhotosFilter';
 
-function PhotoAPODList({ photosList }) {
-  useEffect(() => {
-    photosRequest();
-  }, []);
+function PhotoAPODList({ filter, photosList }) {
+  const [photoList, setPhotoList] = useState([]);
+  useEffect(() => { photosRequest(); }, []);
+  useEffect(() => { setPhotoList(photosList); }, [photosList]);
+  useEffect(() => { setPhotoList([filter.photo]); }, [filter.photo.date]);
+
+  const handleFilterChange = async (date) => {
+    await filterPhotoRequest(date);
+  };
+
   return (
     <div>
+      <PhotosFilter handleFilterChange={handleFilterChange} />
       <div>
         {
-            photosList && photosList.length
-              ? photosList.map((photo) => (
+            photoList && photoList.length
+              ? photoList.map((photo) => (
                 <PhotoAPOD key={photo} photo={photo} />
               ))
               : (<h1> No data found! </h1>)
@@ -24,7 +32,14 @@ function PhotoAPODList({ photosList }) {
   );
 }
 
-const mapStateToProps = (state) => ({ photosList: mapPhotoInfo(state.photos) });
+const mapStateToProps = ({ photos, filter }) => ({
+  photosList: mapPhotoInfo(photos),
+  filter,
+});
+
+const mapDispatchToProps = {
+  filterPhotoRequest,
+};
 
 PhotoAPODList.propTypes = {
   photosList: PropTypes.arrayOf(PropTypes.shape({
@@ -33,6 +48,14 @@ PhotoAPODList.propTypes = {
     url: PropTypes.string.isRequired,
     media_type: PropTypes.string.isRequired,
   })).isRequired,
+  filter: PropTypes.shape({
+    photo: PropTypes.shape({
+      date: PropTypes.string,
+      title: PropTypes.string,
+      url: PropTypes.string,
+      media_type: PropTypes.string,
+    }),
+  }).isRequired,
 };
 
-export default connect(mapStateToProps)(PhotoAPODList);
+export default connect(mapStateToProps, mapDispatchToProps)(PhotoAPODList);
