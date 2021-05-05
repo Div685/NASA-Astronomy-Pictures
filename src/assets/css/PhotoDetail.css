@@ -1,0 +1,40 @@
+.photo__detail {
+  height: 85vh;
+    margin: 22px 0px
+}
+
+.right__side {
+  padding: 16px;
+}
+
+.right__side img {
+  border-radius: 50%;
+  height: 460px;
+}
+
+.photo__heatmap {
+  height: 85vh;
+    margin: 42px 0px;
+}
+
+.heatmap__left {
+  height: 30px;
+  width: 80%;
+  background: #d0d0d0;
+  border-radius: 10px;
+}
+
+.heatmap__date {
+  margin-top: 10px;
+  height: 15px;
+  width: 50%;
+  background: #d0d0d0;
+  border-radius: 10px;
+}
+
+.heatmap__image {
+  border-radius: 50%;
+  padding: 16px;
+  height: 460px;
+  background: #d0d0d0;
+}
