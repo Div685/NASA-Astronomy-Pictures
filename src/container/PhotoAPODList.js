@@ -1,11 +1,9 @@
-/* eslint-disable import/named */
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import PhotoAPOD from '../components/PhotoAPOD';
 import { filterPhotoRequest, photosRequest } from '../redux/thunkFunction';
-import { filterPhotosByDate, mapPhotoInfo } from '../redux/getData';
+import { mapPhotoInfo } from '../redux/getData';
 import PhotosFilter from '../components/PhotosFilter';
 
 function PhotoAPODList({ filter, photosList }) {
@@ -15,7 +13,6 @@ function PhotoAPODList({ filter, photosList }) {
   useEffect(() => { setPhotoList([filter.photo]); }, [filter.photo.date]);
 
   const handleFilterChange = async (date) => {
-    console.log((date));
     await filterPhotoRequest(date);
   };
 
@@ -39,7 +36,6 @@ const mapStateToProps = ({ photos, filter }) => ({
   photosList: mapPhotoInfo(photos),
   filter,
 });
-// const mapStateToProps = (state) => ({ photosList: filterPhotosByDate(state) });
 
 const mapDispatchToProps = {
   filterPhotoRequest,
@@ -60,8 +56,6 @@ PhotoAPODList.propTypes = {
       media_type: PropTypes.string,
     }),
   }).isRequired,
-  // date: PropTypes.string.isRequired,
-  // filterPhotoRequest: PropTypes.func.isRequired,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(PhotoAPODList);

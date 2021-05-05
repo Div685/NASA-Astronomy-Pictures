@@ -37,20 +37,11 @@ export const singlePhotoRequest = (date) => {
 };
 
 export const filterPhotoRequest = async (date) => {
-  console.log('asdf', date);
   store.dispatch(filterPhotoLoading());
   try {
     const data = await getDateFilteredPhoto(date);
     store.dispatch(filterPhotoSuccess(data));
-    console.log('filter: ', data);
   } catch (e) {
     store.dispatch(filterPhotoFailur(e));
   }
-  // // const requestFilterPhoto = getDateFilteredPhoto(date);
-  // requestFilterPhoto.then((data) => {
-  //   dispatch(filterPhotoSuccess(data));
-  //   console.log('filter: ', data);
-  // }).catch((error) => {
-  //   dispatch(filterPhotoFailur(error));
-  // });
 };
