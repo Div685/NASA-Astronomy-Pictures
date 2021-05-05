@@ -1,6 +1,6 @@
 .photo__detail {
-  height: 85vh;
-  margin: 22px 0;
+  min-height: 85vh;
+  margin: 50px 0;
 }
 
 .right__side {
