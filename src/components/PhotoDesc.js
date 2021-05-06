@@ -8,8 +8,8 @@ const PhotoDesc = ({ photo }) => {
     title, date, explanation, url, media_type,
   } = photo;
   return (
-    <div className="photo__detail-main d-flex text-white">
-      <div className="left__side col-5 p-3">
+    <div className="photo__detail-main d-flex flex-column flex-md-row text-white">
+      <div className="left__side col-12 col-md-5 p-3">
         <h3 className="h2 text-uppercase font-weight-bold mt-3 mx-0 mb-0 p-0">{title}</h3>
         <span className="mt-n2">
           {date}

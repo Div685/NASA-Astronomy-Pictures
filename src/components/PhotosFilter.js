@@ -12,9 +12,9 @@ const PhotosFilter = ({ handleFilterChange }) => {
     window.location.reload();
   };
   return (
-    <div className="d-flex justify-content-center align-items-center mr-3">
+    <div className="d-flex flex-column d-md-flex flex-md-row justify-content-center align-items-center mr-md-3 ">
       <input
-        className="form-control w-25"
+        className="form-control w-100 col-md-8 col-lg-4"
         type="date"
         onChange={(e) => handleFilterChange(e.target.value)}
       />
@@ -22,7 +22,7 @@ const PhotosFilter = ({ handleFilterChange }) => {
       <Router>
         <Switch>
           <Route exact path="/">
-            <button type="button" className="btn btn-danger ml-3" onClick={refresh}>Clear Filter</button>
+            <button type="button" className="btn btn-danger ml-md-3 my-1 w-100 col-lg-2" onClick={refresh}>Clear Filter</button>
           </Route>
         </Switch>
       </Router>
