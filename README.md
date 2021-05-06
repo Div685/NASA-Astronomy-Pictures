@@ -2,9 +2,9 @@
 ![Tests workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/tests.yml/badge.svg)
 # Catalogue of Astronomy. (AstroSplash)
 
-> AstroSplash is a web-app built using React and Redux. The main goal for this project was to build a website that Fetch data from API. I have used [NASA APOD](https://api.nasa.gov/) (Astronomy Picture of the Day) API in this project to fetch the photos and other details. The project contains 2 pages, the main page and the Detail page.
-- The main/index page contains list of photos and it's title.
-- The Detail page contains the single photo, title, date and Description about the photo.
+> AstroSplash is a web app built using React and Redux. The main goal for this project was to build a website that Fetches data from API. I have used [NASA APOD](https://api.nasa.gov/) (Astronomy Picture of the Day) API in this project to fetch the photos and other details. The project contains 2 pages, the main page, and the Detail page.
+- The main/index page contains a list of photos and its title.
+- The Detail page contains the single photo, title, date, and Description of the photo.
 - The main/index page also contains filter functionality.
 - you can filter the photos using date.
 
