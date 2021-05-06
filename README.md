@@ -2,7 +2,7 @@
 ![Tests workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/tests.yml/badge.svg)
 # Catalogue of Astronomy. (AstroSplash)
 
-> AstroSplash is a web-app built using React and Redux. The main goal for this project was to build a website that Fetch data from API. I have used NASA APOD (Astronomy Picture of the Day) API in this project to fetch the photos and other details. The project contains 2 pages, the main page and the Detail page.
+> AstroSplash is a web-app built using React and Redux. The main goal for this project was to build a website that Fetch data from API. I have used [NASA APOD](https://api.nasa.gov/) (Astronomy Picture of the Day) API in this project to fetch the photos and other details. The project contains 2 pages, the main page and the Detail page.
 - The main/index page contains list of photos and it's title.
 - The Detail page contains the single photo, title, date and Description about the photo.
 - The main/index page also contains filter functionality.
@@ -17,7 +17,7 @@
 - React
 - Redux
 - Node.js
-- APIs (NASA APOD API)
+- APIs ([NASA APOD API](https://api.nasa.gov/))
 - JSX
 - Webpack
 - HTML5
@@ -35,7 +35,6 @@ To get a local copy up and running follow these simple steps.
 - [ ] run `npm install`
 - [ ] run `npm start`
 - [ ] The `npm start` command will redirect to your default browser, and in case it doesn't redirect automatically you can go to your favorite browser and run `http://localhost:3000/`.
-
  
 ## Authors
 
@@ -56,3 +55,8 @@ Feel free to check the [issues page](https://github.com/Div685/NASA-Astronomy-Pi
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- I would like to thank [Marc-Antoine Roy](https://www.behance.net/enfantroy) for providing such a wonderfull [design](https://www.behance.net/gallery/11351281/NomNom). check out his other design on [Behance](https://www.behance.net/enfantroy).
+- [NASA](https://api.nasa.gov/) for the NASA APOD API.
