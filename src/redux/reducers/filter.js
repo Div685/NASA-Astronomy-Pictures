@@ -27,16 +27,6 @@ const filterPhotoReducer = (state = filtersReducerDefaultState, action) => {
         error: action.error,
         loading: false,
       };
-    // case FILTER_START_DATE:
-    //   return {
-    //     ...state,
-    //     startDate: action.startDate,
-    //   };
-    // case FILTER_END_DATE:
-    //   return {
-    //     ...state,
-    //     endDate: action.endDate,
-    //   };
     default:
       return state;
   }
