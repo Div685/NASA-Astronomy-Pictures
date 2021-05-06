@@ -1,9 +1,12 @@
 ![Linter workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/linters.yml/badge.svg)
 ![Tests workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/tests.yml/badge.svg)
-# NASA APOD (Astronomy Picture of the Day)
-### Catalogue of Astronomy. (AstroSplash)
+# Catalogue of Astronomy. (AstroSplash)
 
-> 
+> AstroSplash is a web-app built using React and Redux. The main goal for this project was to build a website that Fetch data from API. I have used NASA APOD (Astronomy Picture of the Day) API in this project to fetch the photos and other details. The project contains 2 pages, the main page and the Detail page.
+- The main/index page contains list of photos and it's title.
+- The Detail page contains the single photo, title, date and Description about the photo.
+- The main/index page also contains filter functionality.
+- you can filter the photos using date.
 
 ### You can access a Live Demo [HERE](https://astrosplash.herokuapp.com/)
 
