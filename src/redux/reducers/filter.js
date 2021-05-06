@@ -1,8 +1,6 @@
 import { FILTER_PHOTO_FAILUR, FILTER_PHOTO_LOADING, FILTER_PHOTO_SUCCESS } from '../actions/actionType';
 
 const filtersReducerDefaultState = {
-  // startDate: undefined,
-  // endDate: undefined,
   photo: {},
   error: null,
   loading: false,

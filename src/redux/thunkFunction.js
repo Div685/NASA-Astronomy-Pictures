@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { getDateFilteredPhoto, getPhotos, getSinglePhoto } from '../api/requests';
 import {
   fetchPhotosFailure,

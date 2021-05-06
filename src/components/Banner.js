@@ -12,7 +12,6 @@ function Banner() {
       }}
     >
       <div className="banner__contents">
-        {/* Background image */}
         <h1 className="banner__title">
           Welcome to AstroSplash
         </h1>
