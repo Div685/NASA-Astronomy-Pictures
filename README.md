@@ -1,3 +1,5 @@
+![Linter workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/linters.yml/badge.svg)
+![Tests workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/tests.yml/badge.svg)
 # NASA APOD (Astronomy Picture of the Day)
 ### Catalogue of Astronomy. (AstroSplash)
 
