@@ -38,7 +38,7 @@ const mapStateToProps = (state) => ({ photo: state.singlePhoto.photo });
 
 PhotoDetails.propTypes = {
   photo: PropTypes.shape({
-    titlle: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     explanation: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
