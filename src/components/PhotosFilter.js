@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-const PhotosFilter = ({ handleFilterChange }) => {
+const PhotosFilter = ({ handleFilterChange, date }) => {
   const refresh = () => {
     window.location.reload();
   };
@@ -17,6 +17,7 @@ const PhotosFilter = ({ handleFilterChange }) => {
         className="form-control w-100 col-md-8 col-lg-4"
         type="date"
         onChange={(e) => handleFilterChange(e.target.value)}
+        max={date()}
       />
 
       <Router>
@@ -35,4 +36,5 @@ export default connect(mapStateToProps)(PhotosFilter);
 
 PhotosFilter.propTypes = {
   handleFilterChange: PropTypes.func.isRequired,
+  date: PropTypes.func.isRequired,
 };
