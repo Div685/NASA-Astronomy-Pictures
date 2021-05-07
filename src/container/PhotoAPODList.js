@@ -56,7 +56,7 @@ function PhotoAPODList({ filter, photosList }) {
               {
             photoList && photoList.length
               ? photoList.map((photo) => (
-                <PhotoAPOD key={photo} photo={photo} />
+                <PhotoAPOD key={new Date(photo.date)} photo={photo} />
               ))
               : (heatMap())
           }
