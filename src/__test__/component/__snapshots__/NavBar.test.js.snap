@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component renders NavBar page correctly 1`] = `
+<div
+  className="nav false"
+>
+  <a
+    className="nav__logo"
+    href="/"
+  >
+    <h3
+      className="nav__logo"
+    >
+      AstroSplash
+    </h3>
+  </a>
+  <span
+    className="nav__link"
+  >
+    NASA APOD API
+  </span>
+</div>
+`;

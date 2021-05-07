@@ -1,70 +1,68 @@
-# NASA APOD
+![Linter workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/linters.yml/badge.svg)
+![Tests workflow](https://github.com/Div685/NASA-Astronomy-Pictures/actions/workflows/tests.yml/badge.svg)
+# Catalogue of Astronomy. (AstroSplash)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> AstroSplash is a web app built using React and Redux. The main goal for this project was to build a website that Fetches data from API. I have used [NASA APOD](https://api.nasa.gov/) (Astronomy Picture of the Day) API in this project to fetch the photos and other details. The project contains 2 pages, the main page, and the Detail page.
+- The main/index page contains a list of photos and its title.
+- The Detail page contains the single photo, title, date, and Description of the photo.
+- The main/index page also contains filter functionality.
+- you can filter the photos using date.
 
-## Available Scripts
+### You can access a Live Demo [HERE](https://astrosplash.herokuapp.com/)
 
-In the project directory, you can run:
+![Screenshot](./screencapture.png)
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- Redux
+- Node.js
+- APIs ([NASA APOD API](https://api.nasa.gov/))
+- JSX
+- Webpack
+- HTML5
+- CSS3
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple steps.
 
-### `npm run build`
+- [ ] Open your terminal
+- [ ]  Navigate to the directory where you will like to install the repo by running `cd FOLDER-NAME` 
+- [ ] Clone this repository
+ > `git clone https://github.com/Div685/NASA-Astronomy-Pictures.git`
+- [ ] run `npm install`
+- [ ] run `npm start`
+- [ ] The `npm start` command will redirect to your default browser, and in case it doesn't redirect automatically you can go to your favorite browser and run `http://localhost:3000/`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Run Tests**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the tests follow this simple step:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] run `npm test` 
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+👤 **Divyesh Patel**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- GitHub: [@Div685](https://github.com/Div685)
+- Twitter: [@div_685](https://twitter.com/div_685)
+- LinkedIn: [Divyesh Patel](https://www.linkedin.com/in/divyesh-daxa-patel/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🤝 Contributing
 
-## Learn More
+Contributions, issues, and feature requests are welcome!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to check the [issues page](https://github.com/Div685/NASA-Astronomy-Pictures/issues).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- I would like to thank [Marc-Antoine Roy](https://www.behance.net/enfantroy) for providing such a wonderfull [design](https://www.behance.net/gallery/11351281/NomNom). check out his other design on [Behance](https://www.behance.net/enfantroy).
+- [NASA](https://api.nasa.gov/) for the NASA APOD API.
