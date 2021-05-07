@@ -1,0 +1,159 @@
+.main-routes {
+  padding: 3rem 0;
+  background-color: #1a1a29;
+}
+
+.main-section {
+  background: #fff;
+  padding: 16px;
+  border-radius: 14px;
+  color: #000;
+  margin: 3rem 3rem 0 3rem;
+}
+
+.photo-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 16px;
+  margin: 14px 0;
+}
+
+a {
+  color: #1a1a29;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #5858c2;
+}
+
+.photo-details figure img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* heatmap */
+
+.photo__details-heatmap .image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #d0d0d0;
+  margin: 5px 0;
+}
+
+.photo__details-heatmap .figcaption {
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #d0d0d0;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main-routes {
+    padding: 3rem 0;
+    background-color: #1a1a29;
+  }
+
+  .main-section {
+    background: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    color: #000;
+    margin: 3rem 3rem 0 3rem;
+  }
+
+  .photo-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin: 14px 0;
+  }
+
+  a {
+    color: #1a1a29;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #5858c2;
+  }
+
+  .photo-details figure img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  /* heatmap */
+
+  .photo__details-heatmap .image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #d0d0d0;
+    margin: 5px 0;
+  }
+
+  .photo__details-heatmap .figcaption {
+    width: 70%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d0d0d0;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .main-routes {
+    padding: 3rem 0;
+    background-color: #1a1a29;
+  }
+
+  .main-section {
+    background: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    color: #000;
+    margin: 3rem 3rem 0 3rem;
+  }
+
+  .photo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin: 14px 0;
+  }
+
+  a {
+    color: #1a1a29;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #5858c2;
+  }
+
+  .photo-details figure img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  /* heatmap */
+
+  .photo__details-heatmap .image {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #d0d0d0;
+    margin: 5px 0;
+  }
+
+  .photo__details-heatmap .figcaption {
+    width: 70%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #d0d0d0;
+  }
+}

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes Component renders Routes page correctly 1`] = `
+<header
+  className="banner"
+  style={
+    Object {
+      "backgroundImage": "url(\\"https://apod.nasa.gov/apod/image/1004/NGC1055_crawford950.jpg\\")",
+      "backgroundPosition": "center",
+      "backgroundSize": "cover",
+    }
+  }
+>
+  <div
+    className="banner__contents"
+  >
+    <h1
+      className="banner__title"
+    >
+      Welcome to AstroSplash
+    </h1>
+  </div>
+  <div
+    className="banner__fadeBottom"
+  />
+</header>
+`;
