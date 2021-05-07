@@ -8,6 +8,7 @@ const PhotoAPOD = ({ photo }) => {
   const {
     date, title, url, media_type,
   } = photo;
+
   return (
     <Link to={`/photo/${date}`} className="">
       <div className="photo-details">
