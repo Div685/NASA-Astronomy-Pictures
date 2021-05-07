@@ -96,8 +96,13 @@
     margin: 50px 0;
   }
 
+  .left__side {
+    order: 1;
+  }
+
   .right__side {
     padding: 16px;
+    order: 2;
   }
 
   .right__side img {
