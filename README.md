@@ -35,7 +35,13 @@ To get a local copy up and running follow these simple steps.
 - [ ] run `npm install`
 - [ ] run `npm start`
 - [ ] The `npm start` command will redirect to your default browser, and in case it doesn't redirect automatically you can go to your favorite browser and run `http://localhost:3000/`.
- 
+
+**Tests**
+
+To run the tests follow this simple step:
+
+- [ ] run `npm test` 
+
 ## Authors
 
 👤 **Divyesh Patel**
