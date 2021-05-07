@@ -29,9 +29,9 @@ export default PhotoAPOD;
 
 PhotoAPOD.propTypes = {
   photo: PropTypes.shape({
-    date: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    media_type: PropTypes.string.isRequired,
+    date: PropTypes.string,
+    title: PropTypes.string,
+    url: PropTypes.string,
+    media_type: PropTypes.string,
   }).isRequired,
 };

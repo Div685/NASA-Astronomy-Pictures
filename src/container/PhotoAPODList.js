@@ -10,12 +10,19 @@ import Banner from '../components/Banner';
 
 function PhotoAPODList({ filter, photosList }) {
   const [photoList, setPhotoList] = useState([]);
+  const [invalidDate, setInvalidDate] = useState(false);
+
   useEffect(() => { photosRequest(); }, []);
   useEffect(() => { setPhotoList(photosList); }, [photosList]);
   useEffect(() => { setPhotoList([filter.photo]); }, [filter.photo.date]);
 
   const handleFilterChange = async (date) => {
-    await filterPhotoRequest(date);
+    if (new Date(date) > new Date()) {
+      setInvalidDate(true);
+    } else {
+      setInvalidDate(false);
+      await filterPhotoRequest(date);
+    }
   };
 
   const heatMap = () => (
@@ -43,15 +50,19 @@ function PhotoAPODList({ filter, photosList }) {
       <Banner />
       <div className="main-section">
         <PhotosFilter handleFilterChange={handleFilterChange} />
-        <div className="photo-list row">
-          {
+        { invalidDate ? (
+          <div className="text-danger p-3 d-flex justify-content-center h3">No data found, Please select date which is below todays date  </div>) : (
+            <div className="photo-list row">
+              {
             photoList && photoList.length
               ? photoList.map((photo) => (
                 <PhotoAPOD key={photo} photo={photo} />
               ))
               : (heatMap())
           }
-        </div>
+            </div>
+        ) }
+
       </div>
     </>
   );
