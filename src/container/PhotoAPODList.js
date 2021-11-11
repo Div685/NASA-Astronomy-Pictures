@@ -25,6 +25,19 @@ function PhotoAPODList({ filter, photosList }) {
     }
   };
 
+  const disableFutureDate = () => {
+    let month = new Date().getMonth() + 1;
+    let day = new Date().getDate();
+    const year = new Date().getFullYear();
+    if (month < 10) {
+      month = `0${month}`;
+    }
+    if (day < 10) {
+      day = `0${day}`;
+    }
+    return `${year}-${month}-${day}`.toString();
+  };
+
   const heatMap = () => (
     <>
       <div className="photo__details-heatmap">
@@ -49,7 +62,10 @@ function PhotoAPODList({ filter, photosList }) {
     <>
       <Banner />
       <div className="main-section">
-        <PhotosFilter handleFilterChange={handleFilterChange} />
+        <PhotosFilter
+          handleFilterChange={handleFilterChange}
+          date={disableFutureDate}
+        />
         { invalidDate ? (
           <div className="text-danger p-3 d-flex justify-content-center h3">No data found, Please select date which is below todays date  </div>) : (
             <div className="photo-list row">
