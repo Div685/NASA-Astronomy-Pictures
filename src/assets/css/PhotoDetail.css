@@ -7,6 +7,11 @@
   order: 2;
 }
 
+.left__side span {
+  color: #a39f9f;
+  font-size: 14px;
+}
+
 .right__side {
   padding: 16px;
 }
@@ -36,7 +41,7 @@
 }
 
 .heatmap__image {
-  border-radius: 50%;
+  border-radius: 16px;
   padding: 16px;
   height: 460px;
   background: #d0d0d0;
@@ -52,13 +57,18 @@
     order: 1;
   }
 
+  .left__side span {
+    color: #a39f9f;
+    font-size: 14px;
+  }
+
   .right__side {
     padding: 16px;
     order: 2;
   }
 
   .right__side img {
-    border-radius: 50%;
+    border-radius: 16px;
     height: 460px;
   }
 
@@ -83,7 +93,7 @@
   }
 
   .heatmap__image {
-    border-radius: 50%;
+    border-radius: 16px;
     padding: 16px;
     height: 460px;
     background: #d0d0d0;
@@ -100,13 +110,18 @@
     order: 1;
   }
 
+  .left__side span {
+    color: #a39f9f;
+    font-size: 14px;
+  }
+
   .right__side {
     padding: 16px;
     order: 2;
   }
 
   .right__side img {
-    border-radius: 50%;
+    border-radius: 16px;
     height: 460px;
   }
 
@@ -131,7 +146,7 @@
   }
 
   .heatmap__image {
-    border-radius: 50%;
+    border-radius: 16px;
     padding: 16px;
     height: 460px;
     background: #d0d0d0;

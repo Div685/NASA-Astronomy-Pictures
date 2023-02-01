@@ -9,12 +9,12 @@ const PhotoDesc = ({ photo }) => {
   } = photo;
   return (
     <div className="photo__detail-main d-flex flex-column flex-md-row text-white">
-      <div className="left__side col-12 col-md-5 p-3">
+      <div className="left__side col-12 col-md-6 p-3">
         <h3 className="h2 text-uppercase font-weight-bold mt-3 mx-0 mb-0 p-0">{title}</h3>
         <span className="mt-n2">
           {date}
         </span>
-        <p className="mt-3">
+        <p className="mt-3 text-justify">
           {explanation}
         </p>
       </div>

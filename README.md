@@ -8,7 +8,7 @@
 - The main/index page also contains filter functionality.
 - you can filter the photos using date.
 
-### You can access a Live Demo [HERE](https://astrosplash.herokuapp.com/)
+### You can access a Live Demo [HERE]( https://astro-splash.web.app)
 
 ![Screenshot](./screencapture.png)
 
